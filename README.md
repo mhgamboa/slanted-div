@@ -30,7 +30,12 @@ There are two ways to make a custom backgournd:
 
 ### Using `clip-path` as a Background
 
+#### Pros:
+
 - Cleaner code
+
+#### Cons:
+
 - Really only allows for the slanted line design
 - Some contents may be covered by the clip-path - They will have to be moved around
 
