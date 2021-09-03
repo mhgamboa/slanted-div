@@ -1,0 +1,152 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --radient-color-one: #02aab0;
+  --radient-color-two: #00cdac;
+  --primary-bg-color: linear-gradient(
+    180deg,
+    var(--radient-color-one),
+    var(--radient-color-two)
+  );
+  /* background-image: linear-gradient(135deg,#02aab0,#00cdac) */
+  /* --primary-bg-color: red; */
+  --secondary-bg-color: rgb(228, 228, 228);
+}
+/* clip-path: polygon(0 0,100% 0,100% 80%,0 100%); */
+
+/* Landing View */
+.landing-view {
+  background: var(--primary-bg-color);
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* SVG for Landing View */
+.custom-shape-divider-bottom-1630690579 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1630690579 svg {
+  position: relative;
+  display: block;
+  width: calc(289% + 1.3px);
+  height: 104px;
+}
+
+.custom-shape-divider-bottom-1630690579 .shape-fill {
+  fill: var(--secondary-bg-color);
+}
+
+/* About Me Section */
+.about-me {
+  background: var(--secondary-bg-color);
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+/* SVG for Between About Me and My Projects */
+.custom-shape-divider-top-1630700939 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1630700939 svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 109px;
+}
+
+.custom-shape-divider-top-1630700939 .shape-fill {
+  fill: var(--secondary-bg-color);
+}
+
+/* My Projects Section */
+.my-projects {
+  background: var(--primary-bg-color);
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+
+.my-projects h1 {
+  padding-top: 100px;
+}
+
+/* SVG between Projects & certifications */
+.custom-shape-divider-bottom-1630690947 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1630690947 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 55px;
+}
+
+.custom-shape-divider-bottom-1630690947 .shape-fill {
+  fill: var(--secondary-bg-color);
+}
+
+/* Education Section */
+.education {
+  background: var(--secondary-bg-color);
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1630702648 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1630702648 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 110px;
+}
+
+.custom-shape-divider-bottom-1630702648 .shape-fill {
+  fill: #ffffff;
+}
+
+footer {
+  height: 10vh;
+  background: rgb(26, 0, 73);
+}

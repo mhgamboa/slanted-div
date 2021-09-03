@@ -1,0 +1,78 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+:root {
+  --radient-one: #02aab0;
+  --radient-two: #00cdac;
+  --primary-bg-color: linear-gradient(
+    180deg,
+    var(--radient-one),
+    var(--radient-two)
+  );
+
+  --secondary-bg-color: rgb(235, 235, 235);
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: var(--secondary-bg-color);
+}
+
+/* clip-path: polygon(0 0,100% 0,100% 80%,0 100%); */
+
+/* Landing View */
+.landing-view {
+  background: var(--primary-bg-color);
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+/* About Me Section */
+.about-me {
+  background: var(--secondary-bg-color);
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* My Projects Section */
+.my-projects {
+  background: var(--primary-bg-color);
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.my-projects h1 {
+  padding-top: 50px;
+}
+
+/* Education Section */
+.education {
+  background: var(--secondary-bg-color);
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Footer */
+footer {
+  height: 10vh;
+  background: rgb(26, 0, 73);
+}
